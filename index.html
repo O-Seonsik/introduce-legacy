@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href=".\index.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+        <script>
+            function fnMove(seq){
+                var offset = $("#" + seq).offset();
+                $('html, body').animate({scrollTop : offset.top - 60}, 400);
+            }
+
+            function move(){
+            $('html, body').animate({scrollTop : 0}, 400);
+            }
+        </script>
+        <title>About O's</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li id="title" onclick="move()">O's.com</li>
+                <li onclick="fnMove('h2_profile')">자기소개</li>
+                <li onclick="fnMove('h2_awards')">수상경력</li>
+                <li onclick="fnMove('h2_interest')">흥미</li>
+                <li onclick="fnMove('h2_project')">프로젝트</li>
+            </ul>
+        </nav>
+        <div id = "blank"></div>
+        <h2 id = "h2_profile" class="clearfix">자기소개</h2>
+        <div class="section">
+            <img id = "profile_img" src = "./img/21139403.jpg">
+            <p>이름 : 오선식(O's)</p>
+            <p>출생 : 1997년 8월 19일, 인천광역시</p>
+            <p>소속 : 대한민국</p>
+            <p>학력 : 인천정보산업고등학교 컴퓨터정보통신과 졸업(2013.03 ~ 2016.03)</p>
+            <p>　　&nbsp&nbsp&nbsp가톨릭대학교 컴퓨터정보공학부 재학 중(2016.03 ~ )</p>
+            <p>　　&nbsp&nbsp&nbsp2전공 : 미디어기술콘텐츠학과(2019.03 ~ )</p>
+            <p>　　&nbsp&nbsp&nbsp부전공 : 사회과학부 심리학전공(2019.09 ~ )</p>
+            <p>기타 : 인천정보산업고등학교 총학생회 부회장(2014.08 ~ 2015.8)</p>
+            <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 육군 병장 만기 전역(2017.02 ~ 2018.11)</p>
+            <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 가톨릭대학교 컴퓨터정보공학부 전공학회 F.A.N 회장(2020)</p>
+            <p><a href="https://blog.oseonsik.com">Blog</a> <a href="https://www.instagram.com/5linesys/">Instagram</a> <a href="https://github.com/O-Seonsik">GitHub</a> </p>
+        </div>
+        <h2 id = "h2_awards" class="clearfix">수상경력</h2>
+        <div id="awards" class="section">
+            <h3 class="subtitle">2013</h3>
+              <p>제10회 전국정보과학 경시대회 창작프로그래밍 고등부 장려상</p>
+              <p>29회 인천광역시교육청 학생정보올림피아드 공모부문 금상</p>
+            <h3 class="subtitle">2014</h3>
+              <p>제11회 전국 정보과학경시대회 창작프로그래밍 고등부-장려상</p>
+              <p>제15회 인천광역시 미래과학 정보 창의성대회 프로그래밍부문 장려상</p>
+              <p>제25회 전국 ICT창의성대회 웹프로그래밍 은상</p>
+            <h3 class="subtitle">2015</h3>
+              <p>제26회 전국ICT창의성대회 웹프로그래밍 부문 은상</p>
+              <p>2015 ICT어워드 코리아 창작프로그래밍 고등부 은상</p>
+            <h3 class="subtitle">2016</h3>
+              <p>2016학년도 가톨릭대학교 Programming 대회 동상</p>
+        </div>
+        <h2 id = "h2_interest" >흥미</h2>
+        <div id = "interest" class="section">
+            <div class="i_section">
+              <h3>과거</h3>
+                <ol>
+                  <li>천문학</li>
+                  <li>영화</li>
+                  <li>악기</li>
+                </ol>
+            </div>
+            <div class="i_section">
+              <h3>요즘</h3>
+                <ol>
+                  <li>React.js</li>
+                  <li>python</li>
+                  <li>사진</li>
+                </ol>
+            </div>
+            <div class="i_section">
+              <h3>항상</h3>
+                <ol>
+                  <li>힙합</li>
+                  <li>여행</li>
+                  <li>전자기기</li>
+                </ol>
+            </div>
+        </div>
+        <h2 id = "h2_project" class="clearfix">프로젝트</h2>
+        <div id="project" class="section">
+          <h3 class="subtitle2">도서관리 시스템 (2020)</h3>
+          <div class = "imgs">
+            <img class="horizontal_img" src="./img/Library/1.png">
+            <img class="horizontal_img" src="./img/Library/2.png">
+            <img class="horizontal_img" src="./img/Library/3.png">
+          </div>
+          <div id="info" class="clearfix">
+              <p>본 도서관리 시스템은 로그인을 해야만 사용이 가능한 서비스입니다.</p>
+              <p>SHA256 암호화 방식을 통해 데이터베이스 안전하게 비밀번호를 저장합니다.</p>
+              <p>부트스트랩을 활용해 반응형 웹을 제공하여 다양한 인터페이스에서 사용성을 향상시켰습니다.</p>
+              <p>대출한 사람의 정보를 빠르게 확인하여 연락을 통해 다른 사람이 도서를 대출할 때 도움을 줄 수 있게 했습니다.</p>
+              <p>사용기술 : Apache Tomcat, Jsp, Java Servlet, MySql, jstl, BootStrap, CSS, Javascript</p>
+              <p><a href="https://github.com/O-Seonsik/OOP_Paradigm">Github</a>, <a href="http://test.oseonsik.com/library">사용해보기</a></p>
+          </div>
+          <h3 class="subtitle2">OLLOC (2020)</h3>
+            <div class = "imgs">
+              <img class="horizontal_img" src="./img/OLLOC/1.png">
+              <img class="horizontal_img" src="./img/OLLOC/2.png">
+              <img class="horizontal_img" src="./img/OLLOC/3.png">
+            </div>
+            <div id="info" class="clearfix">
+                <p>OLLOC은 <a href="https://leejh.info">@paperlee</a>와 공동으로 진행한 프로젝트입니다.</p>
+                <p>OLLOC은 기존의 SNS와 다르게 글 작성에 제약을 걸어 정돈된 느낌의 SNS를 만들자는 생각에서 출발했습니다.</p>
+                <p>따라서 OLLOC은 글을 작성할 때 꼭 사진을 함께 올려야 한다는 첫번째 규칙을 세웠습니다.</p>
+                <p>여기에 추가적으로 재미적인 요소를 위해 사진마다 사진을 찍은 장소를 추가한다는 규칙을 세웠습니다.</p>
+                <p>저는 프로그램의 클라이언트(프론트엔드)를 담당했습니다. 추가적으로 OLLOC의 LOC은 LOCation의 약자입니다.</p>
+                <p>사용기술 : 프론트 - React.js, SASS(SCSS), Kakao Maps API, 백엔드 - python, django, django-rest-framework, mariaDB</p>
+                <p><a href="https://github.com/OLseconds/OLLOC-PC">Github(front-end)</a>, <a href="https://github.com/OLseconds/OLLOC-server">Github(back-end)</a>, <a href="https://blog.oseonsik.com/archives/81">Blog</a></p>
+                <p><a href="http://react.kr3.kr">클라이언트</a></p>
+            </div>
+            <h3 class="subtitle2">Git Chat (2019)</h3>
+            <div class = "imgs">
+              <img class="horizontal_img" src="./img/GitChat/GitChat.png">
+              <img class="vertical_img" src="./img/GitChat/Chatting.png">
+            </div>
+            <div id="info" class="clearfix">
+                <p>컴퓨터공학 팀프로젝트에서 사용할 수 있는 채팅 프로그램입니다.</p>
+                <p>Git Chat은 사용자가 만든 대화방과 대화 참여자들이 사용하는 Github Repository를 연동하여</p>
+                <p>채팅 참여자의 대화량, Github commit수를 이용하여 기여도를 평가하는 프로그램입니다.</p>
+                <p>친구추가, 접속상태 실시간 확인, 대화방 내 기여도 1등에게 왕관 표시를 해주고, 오프라인 시에 메세지 수신이 가능하며</p>
+                <p>프로그램 종료시에도 대화내용을 저장할 수 있는 기능을 가진 1:N 채팅이 가능한 프로그램입니다.</p>
+                <p>사용기술 : Java, Java Socket(TCP/IP), Java swing, Java Seleninum, jsoup, Ubuntu_Server(AWS), MySQL</p>
+                <p></p><a href="https://github.com/O-Seonsik/GitChat">Github</a></p>
+            </div>
+            <h3 class="subtitle2">Daily Health (2015)</h3>
+            <div class = "imgs">
+                <img class="horizontal_img" src="./img/Daily_Health/1.png">
+                <img class="vertical_img" src="./img/Daily_Health/2.png">
+            </div>
+            <div id="info" class="clearfix">
+                <p>초중고교에서 체력관리에 사용할 수 있도록 고안하여 만든 프로그램입니다.</p>
+                <p>Daily Health는 별도의 웨어러블 기기 없이 스마트폰의 센서를 이용하여 집에서 운동을 하고 운동량을 기록하는</p>
+                <p>프로그램 입니다. 또한, 관리자 프로그램과 연동되어있는 스마트폰의 운동량을 수집하여 그래프로 수치화해</p>
+                <p>가독성을 높혔습니다. 관리자 프로그램을 이용하여 다수의 이용자의 상태를 확인하고 운동을 시킬 수 있습니다.</p>
+                <p>개인 이용자도 충분히 스스로 운동량을 스마트폰으로 확인하며 사용하기에 무리없는 프로그램입니다.</p>
+                <p>관리자 프로그램 : vb.NET 2010, 서버 : C Socket, 애플리케이션 : Java, XML 을 이용하여 만든 프로그램입니다.</p>
+            </div>
+
+            <h3 class="subtitle2">Are U oK? (2014)</h3>
+            <div class = "imgs">
+                <img src="https://placehold.it/256x128">
+            </div>
+            <div id="info" class="clearfix">
+                <p>아파도 병원에 갈 시간이 없이 바쁜 현대인을 위해 참고용으로 자신의 몸을 자가진단 하도록 도와주는 프로그램입니다.</p>
+                <p>Are U Ok?는 청력과 색맹, 색각 검사를 할 수 있으며, 몸 상태를 콤보박스에서 단계적으로 선택해나가 의심되는 질병을</p>
+                <p>프로그램 사용자에게 알려줍니다. 또한, 하루동안 자신이 먹은 음식과 양을 선택하면 섭취한 칼로리의 양을 대략적으로</p>
+                <p>계산하는 기능과 운동량과 운동종류를 선택해 소모한 칼로리를 대략적으로 계산해주는 기능이 있습니다.</p>
+                <p>VB6.0을 이용하여 만든 프로그램입니다.</p>
+            </div>
+
+          <h3 class="subtitle2">Computer BlackBox (2013)</h3>
+          <div class = "imgs">
+              <img src="https://placehold.it/256x128">
+          </div>
+          <div id="info" class="clearfix">
+                <p>청소년들이 스스로 올바른 컴퓨터 사용습관을 기를 수 있도록 도와주는 프로그램입니다.</p>
+                <p>Computer BlackBoox는 PC자동종료, 지정한 사이트 접속 차단, PC 사용시간 알림, 특정 사이트 접속시간 확인</p>
+                <p>특정 프로그램 이용시간 확인, 특정 사이트 접속시간 확인 등의 기능이 있습니다.</p>
+                <p>VB6.0을 사용하여 만든 프로그램입니다.</p>
+          </div>
+        </div>
+    </body>
+
+    <footer>
+      <div id="footer1">
+        <div id="contact">
+          <h2>Contact me!</h2>
+            <p>dhtjstlr777@gmail.com</p>
+        </div>
+
+        <div id="about">
+          <h2>about!</h2>
+            <p>오로지 나의 소개와 후에 이력서에 참고하기 위하여</p>
+            <p>만들고 관리할 사이트</p>
+        </div>
+      </div>
+
+      <h4 class="clearfix">Copyrightⓒ 2018 O's All rights reserved.</h4>
+    </footer>
+</html>

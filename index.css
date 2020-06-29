@@ -1,0 +1,146 @@
+/*mobile*/
+@media only screen
+and (max-width: 768px){
+    body{font-family: "Nanum Gothic", sans-serif; padding: 0 10px 0 10px; margin: auto 13%;}
+    ul, ol, li{margin:0; padding:0;}
+
+    nav{width: 74%; clear: both; position:fixed; z-index:999; top:0; height: 70px; margin-bottom: 10px;}
+    nav>ul{list-style: none; width: 100%; }
+    #title{font-size: 1.3em;; font-weight: bold;}
+    nav>ul>li{
+        float: left;
+        width: 20%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    nav>ul>li:hover{background-color:rgb(229, 229, 229);}
+    nav::after{display: block; content: ''; clear: both;}
+
+    #blank{height: 60px;}
+
+    #profile_img{width: 250px; height: 250px; margin-left: 30%;}
+
+    #awards>p{margin-left: 15%;}
+
+    #interest::after{display: block; content: ''; clear: both;}
+
+    #project{width: 100%; padding-top: 10px;}
+    #project>#info{margin: 0 auto;}
+
+    footer{border-top: 2px solid black; text-align: center;}
+    #contact{float: left; width: 50%;}
+
+
+    .imgs{float: left; width: 100%; text-align: center;}
+    .horizontal_img{width: 256px; height:156px;}
+    .vertical_img{width: 128px; height: 156px;}
+    .i_section{float: left; margin-left: 22%;}
+    .section{border-top: 1px solid black;}
+    .subtitle{width: 80%; border-bottom: 1px solid black; margin: 0 auto; margin-top: 10px}
+    .subtitle2{padding-bottom:10px; margin-bottom:7px; border-bottom: double; border-width: 3px; border-color: gray}
+    .clearfix::before{display: block; content: ''; clear: both;}
+}
+
+/*tablet*/
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px){
+    body{font-family: "Nanum Gothic", sans-serif; padding: 0 10px 0 10px; margin: auto 13%;}
+    ul, ol, li{margin:0; padding:0;}
+
+    nav{width: 74%; clear: both; position:fixed; z-index:999; top:0; height: 70px; margin-bottom: 10px;}
+    nav>ul{list-style: none; width: 100%; }
+    #title{font-size: 1.3em;; font-weight: bold;}
+    nav>ul>li{
+        float: left;
+        width: 20%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    nav>ul>li:hover{background-color:rgb(229, 229, 229);}
+    nav::after{display: block; content: ''; clear: both;}
+
+    #blank{height: 60px;}
+
+    #profile_img{width: 250px; height: 250px; margin-left: 30%;}
+
+    #awards>p{margin-left: 15%;}
+
+    #interest::after{display: block; content: ''; clear: both;}
+
+    #project{width: 100%; padding-top: 10px;}
+    #project>#info{margin: 0 auto;}
+
+    footer{border-top: 2px solid black; text-align: center;}
+    #contact{float: left; width: 50%;}
+
+
+    .imgs{float: left; width: 100%; text-align: center;}
+    .horizontal_img{width: 256px; height:156px;}
+    .vertical_img{width: 128px; height: 156px;}
+    .i_section{float: left; margin-left: 22%;}
+    .section{border-top: 1px solid black;}
+    .subtitle{width: 80%; border-bottom: 1px solid black; margin: 0 auto; margin-top: 10px}
+    .subtitle2{padding-bottom:10px; margin-bottom:7px; border-bottom: double; border-width: 3px; border-color: gray}
+    .clearfix::before{display: block; content: ''; clear: both;}
+}
+
+/* Desktops and laptops */
+@media only screen
+and (min-width : 1025px) {
+    body{font-family: "Nanum Gothic", sans-serif; padding: 0 10px 0 10px; margin: auto 13%;}
+    ul, ol, li{margin:0; padding:0;}
+
+    nav{width: 74%; clear: both; position:fixed; z-index:999; top:0; height: 70px; margin-bottom: 10px;}
+    nav>ul{list-style: none; width: 100%;}
+    #title{font-size: 1.3em;; font-weight: bold;}
+    nav>ul>li{
+        float: left;
+        width: 20%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    nav>ul>li:hover{background-color:rgb(229, 229, 229);}
+    nav::after{display: block; content: ''; clear: both;}
+
+    #blank{height: 60px;}
+
+    #profile_img{float: left; width: 250px; height: 250px; margin-right: 20px; margin-bottom: 100px;}
+
+    #awards>p{margin-left: 15%;}
+
+    #interest::after{display: block; content: ''; clear: both;}
+
+    #project{width: 100%; padding-top: 10px;}
+    #project>#info{margin: 0 auto;}
+    #info{width: 100%; padding-left: 10%;}
+    #info>p{width: 80%;}
+
+    footer{border-top: 2px solid black; text-align: center;}
+    #contact{float: left; width: 50%;}
+
+
+    .imgs{float: left; width: 100%; text-align: center;}
+    .horizontal_img{width: 256px; height:156px;}
+    .vertical_img{width: 128px; height: 156px;}
+    .i_section{float: left; margin-left: 22%;}
+    .section{border-top: 1px solid black;}
+    .subtitle{width: 80%; border-bottom: 1px solid black; margin: 0 auto; margin-top: 10px}
+    .subtitle2{padding-bottom:10px; margin-bottom:7px; border-bottom: double; border-width: 3px; border-color: gray}
+    .clearfix::before{display: block; content: ''; clear: both;}
+}
